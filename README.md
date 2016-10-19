@@ -3,19 +3,74 @@
 ## Use Case Diagram (ภาษาไทย)
 
 การบ้านเรื่อง use case diagram 
- ภาพที่1
-![](http://www.plantuml.com/plantuml/img/LSv13a1038NXlLDqoS8LX4XiYRY0J2kHT5Igm_KHH6RzVtrfkTce5ZmdJZOJJmfvNa2wptJ0geB1MHQrj4A4xYam2DJN_Izkq9ENdJuJjoOmWmll79ADpB6ePPbczT0gacP9IGjUxvq0)
+ ภาพที่1 Costomer side
+ code
+@startuml
+Costomer--(View Product)
+Costomer--(Add Product To Cart)
+Costomer--(Remove Product\nFrom Cart)
+Costomer--(Fill customer detail)
+Costomer--(Confirm Order)
+@enduml
+..........................
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuNBEBox9pqqjqjNL2CjCBLS8ACfFAKqkqKIMS4n9WOahXEGhE0EreiW7fURcbwN2bCJakHNbvsAgSilCoL58BeNm5L9IIn8pSr0KEEVdfMKMvIhu5wMa5cboSJcavgM0d0W0)
+
+
 
 ภาพที่ 2 ATM system
+code
+..................................
+@startuml
+Operator -- (system\nstartup)
+Operator--(System\nShutdown)
+Customer -- (Session)
+(Session).>(Transaction):include
+Transaction<.(Invalid\nPin):extend
+bank--(Transaction)
+Transaction<|--(withdrawal)
+Transaction<|--(Deposit)
+Transaction<|--(Transfer)
+Transaction<|--(Inquiry)
+@enduml
+................................
 ![](http://www.plantuml.com/plantuml/img/PP313e8m44Jl_GgESAWVO8mXqGidJV38fT8rD9OjThSYYHzl4KCmt7RcxMGdcnChpw6rujI1L-ny8cMIqa0CROKJxRAPIfcMFrOsWRNhCHE7GEnQcA8b41aNtNdQxDEBLqYgvb5k3TOsQ10BSxT92tmgQtI5PnDtuCM0MbmLtkF9PVmlzewmDznehtfbr-m8dIF3Q_3LD_1hKk0Z63zaGkInmVYP3m00)
 
+
 ภาพที่ 3 messaging user
+code
+......................
+@startuml
+MessagingUser -- (Interacively dialog)
+(Interacively dialog)..>(indentify oneself):Include
+(Interacively dialog)<..(Show a schema):Extend
+Moderator--(Bar a group)
+(Bar a group)<--(Bar a user)
+(Bar a group)..>(indentify oneself):Include
+@enduml
+...................................
 ![](http://www.plantuml.com/plantuml/img/XKzB2i8m5Dpd55acY-G0fKWHN7JHbVG0Z-Gr3QGlae_Qsnit8b9mEJzcPiW5KgbRO1Fc3CwJcpCchXGN8nLCOFmTmywjXn2TP8UirYVXoI8Ll-my4cOCY-n6Cg5QFCxqMelh6XySU3OhRY2xoxCWMJP5szmb9gN46L8pk1JhhNL_e_wZrZRuH_mpQ6Wrxyyl)
 
 ภาพที่ 4 admin website
-![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuGfFJIhEB4brJCdDpCiiBYbABCalqjNLy4tCIqnFZSaBBKujKd0loYyjADOaHYrHYXI2KukBC_Fp21cfu9EV3bJZaPfJu99Qd8rXbKDgNWh83m00)
+code
+..............
+@startuml
+WebsiteAdministrator--(Manage\nUser Groups)
+WebsiteAdministrator--(Manage Users)
+HelpDesk--(Manage Users)
+WebsiteAdministrator--(Manage\nUser Sessions)
+WebsiteAdministrator--(Manage Logs)
+@enduml
+...............................
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuGfFJIhEB4brJCdDpCiiBYbABCalqjNLy4tCIqnFZSaBBKujKd0loYyjADR4hrO1f1Ieo2Crfy0bjJWRGu8Ocu9JYuipy_C8skMJdmvKm-MGcfS2yWG0)
 
 ภาพที่ 5 library information system
+code
+..................
+@startuml
+Member--(User login)
+(User login)<..(Answer security\nquestion):extend
+@enduml
+........................
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuV9DpKrABTBLrGWjJYrIoCbFpypJv4BcsEZfQJZc5PS31OfJaqkBCaigO_8AIrEBIpBpypIjKYjAKlDIkBWSW2J8F000)
 
 
