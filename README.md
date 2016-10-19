@@ -59,7 +59,9 @@ WebsiteAdministrator--(Manage Users)
 HelpDesk--(Manage Users)
 WebsiteAdministrator--(Manage\nUser Sessions)
 WebsiteAdministrator--(Manage Logs)
+
 @enduml
+
 ...............................
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuGfFJIhEB4brJCdDpCiiBYbABCalqjNLy4tCIqnFZSaBBKujKd0loYyjADR4hrO1f1Ieo2Crfy0bjJWRGu8Ocu9JYuipy_C8skMJdmvKm-MGcfS2yWG0)
 
