@@ -5,6 +5,7 @@
 การบ้านเรื่อง use case diagram 
  ภาพที่1 Costomer side
  code
+ ///
 @startuml
 Costomer--(View Product)
 Costomer--(Add Product To Cart)
@@ -12,6 +13,7 @@ Costomer--(Remove Product\nFrom Cart)
 Costomer--(Fill customer detail)
 Costomer--(Confirm Order)
 @enduml
+///
 ..........................
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuNBEBox9pqqjqjNL2CjCBLS8ACfFAKqkqKIMS4n9WOahXEGhE0EreiW7fURcbwN2bCJakHNbvsAgSilCoL58BeNm5L9IIn8pSr0KEEVdfMKMvIhu5wMa5cboSJcavgM0d0W0)
 
